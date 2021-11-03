@@ -13,14 +13,14 @@ int main()
 	
 	//zadanie 2
 	int num;
-	cout << "\n\nZadanie 2\n\nPodaj liczby.\n";
-	cin >> num, cout << endl;
+	cout << "\n\nZadanie 2\n\nPodaj liczby.\n\n";
+	cin >> num;
 	while (num >= 0)
 		cin >> num;
 
 	//zadanie 3
 	int plus = 0, minus = 0, plus_sum = 0, minus_sum = 0;
-	cout << "\n\nZadanie 3\n\nPodaj 10 liczb.\n";
+	cout << "\n\nZadanie 3\n\nPodaj 10 liczb.\n\n";
 	for (int i = 0; i < 10; i++) {
 		cin >> num;
 		if (num > 0) {
@@ -37,7 +37,7 @@ int main()
 
 	//zadanie 4
 	int n, sum = 0;
-	cout << "\n\nZadanie 4\n\nPodaj liczbę n. (n>0)\n";
+	cout << "\n\nZadanie 4\n\nPodaj liczbę n. (n>0)\n\n";
 	cin >> n;
 	for (int i = 0; i < n; i++) {
 		if ((i + 1) % 2 == 0)
@@ -46,8 +46,8 @@ int main()
 	cout << "\nSuma liczb parzystych tego ciągu wynosi " << sum;
 
 	//zadanie 5
-	cout << "\n\nZadanie 5\n\nPodaj liczbę liczb. (n>0)\n";
-	cin >> n;
+	cout << "\n\nZadanie 5\n\nPodaj liczbę liczb. (n>0)\n\n";
+	cin >> n, cout << endl;
 	srand(time(NULL));
 	sum = 0;
 	for (int i = 0; i < n; i++) {
@@ -61,10 +61,10 @@ int main()
 	//zadanie 1'
 	float sum1 = 0, m;
 	int i;
-	cout << "\n\nZadanie 1\n\nPodaj liczbę studentów\n";
+	cout << "\n\nZadanie 1\n\nPodaj liczbę studentów\n\n";
 	cin >> m;
 	i = m;
-	cout << "\nPodaj liczby punktów poszczególnych studentów\n";
+	cout << "\nPodaj liczby punktów poszczególnych studentów\n\n";
 	while (i > 0) {
 		float points;
 		cin >> points;
@@ -74,11 +74,11 @@ int main()
 	cout << "\nŚrednia wynosi " << sum1 / m << ".";
 
 	//zadanie 2'
-	cout << "\n\nZadanie 2\n\nPodaj liczbę studentów.\n";
+	cout << "\n\nZadanie 2\n\nPodaj liczbę studentów.\n\n";
 	cin >> m;
 	i = m;
 	sum1 = 0;
-	cout << "\nPodaj liczby punktów poszczególnych studentów (0, 100).\n";
+	cout << "\nPodaj liczby punktów poszczególnych studentów (0, 100).\n\n";
 	while (i > 0) {
 		float points;
 		cin >> points;
@@ -91,30 +91,32 @@ int main()
 	cout << "\nŚrednia wynosi " << sum1 / m << ".";
 
 	//zadanie 3'
-	cout<<"\n\nZadanie 3\n\nPodaj liczbę studentów.\n";
-	cin >> m;
+	cout<<"\n\nZadanie 3\n\n";
+	m = 1;
 	sum1 = 0;
-	cout << "\nPodaj liczby punktów poszczególnych studentów (0, 100).\n";
+	cout << "\nPodaj liczby punktów poszczególnych studentów (0, 100).\n\n";
 	while (true) {
 		float points;
 		cin >> points;
 		if (0 <= points && points <= 100) {
 			sum1 += points;
+			m++;
 		}
 		else break;
 	}
 	cout << "\nŚrednia wynosi " << sum1 / m << ".";
 
 	//zadanie 4'
-	cout << "\n\nZadanie 4\n\nPodaj liczbę studentów.\n";
-	cin >> m;
+	cout << "\n\nZadanie 4\n\n";
+	m = 1;
 	sum1 = 0;
-	cout << "\nPodaj liczby punktów poszczególnych studentów (0, 100).\n";
+	cout << "\nPodaj liczby punktów poszczególnych studentów (0, 100).\n\n";
 	do{
 		float points;
 		cin >> points;
 		if (0 <= points && points <= 100) {
 			sum1 += points;
+			m++;
 		}
 		else break;
 	} while (true);
